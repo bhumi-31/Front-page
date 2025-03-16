@@ -16,7 +16,7 @@
 
 <body>
     <header>
-        <div class="bg-red-950 text-white flex flex-col items-center justify-center p-3">
+        <div class="bg-red-950 text-white flex flex-col md:flex-row md:space-x-10 items-center justify-center p-2 ">
             <div class="uppercase">
                 <span>FREE UK SHIPPING ON ALL ORDERS</span>
             </div>
@@ -24,7 +24,7 @@
                 <span>See our 333 reviews on <i class="fa-solid fa-star"></i> Trustpilot</span>
             </div>
         </div>
-        <div class="flex justify-between text-2xl p-2">
+        <div class="flex justify-between text-2xl p-2 md:hidden">
             <div>
                 <i class="fa-solid fa-bars"></i>
             </div>
@@ -35,13 +35,33 @@
                 <i class="fa-solid fa-bag-shopping"></i>
             </div>
         </div>
+
+        <div class=" hidden md:flex md:justify-between p-3">
+            <div class="font-serif text-2xl">
+                <span>LONDON BROGUES</span>
+            </div>
+            <div class="md:flex md:space-x-4 md:items-center md:text-sm md:font-semibold">
+                <ul class="md:flex md:space-x-4">
+                    <li>HOME</li>
+                    <li>SHOES</li>
+                    <li>BOOTS</li>
+                    <li>WEDDINGS</li>
+                    <li>JUNIOR</li>
+                    <li>ACCESSORIES</li>
+                    <li>STYLEBLOG</li>
+                    <li>CONTACT</li>
+                </ul>
+                <i class="fa-regular fa-user"></i>
+                <i class="fa-solid fa-bag-shopping"></i>
+            </div>
+        </div>
     </header>
 
     <main>
         <div class="relative">
             <div>
                 <img src="	https://londonbrogues.co.uk/cdn/shop/t/26/assets/lb-header.jpg?v=78209799829282309131740671550"
-                    class="h-[300px] " alt="">
+                    class="h-[300px] md:h-[600px] w-full" alt="">
             </div>
 
             <div
@@ -67,216 +87,244 @@
             <div class="flex justify-center m-[50px] text-sm">
                 <span>LONDON BROUGES OXFORD SELECTION</span>
             </div>
+            <div class="hidden md:flex md:items-center md:space-x-10 md:justify-center">
+                <div class="flex justify-evenly items-center md:space-x-10 md:items-center">
+                    <img src="https://londonbrogues.co.uk/cdn/shop/t/26/assets/flag-gb.png?v=88841723847191060021740671550"
+                        class="w-[36px] h-[18px]" alt="">
+                    <span>GATSBY</span>
+                    <span>TOMMY</span>
+                    <span>SIDNEY</span>
+                </div>
 
-            <div class="flex justify-evenly items-center">
-                <img src="https://londonbrogues.co.uk/cdn/shop/t/26/assets/flag-gb.png?v=88841723847191060021740671550"
-                    class="w-[36px] h-[18px]" alt="">
-                <span>GATSBY</span>
-                <span>TOMMY</span>
-                <span>SIDNEY</span>
-            </div>
-
-            <div class="mt-2 flex justify-evenly items-center">
-                <span>ALBERT</span>
-                <span>SHELBY</span>
+                <div class="mt-2 flex justify-evenly items-center md:space-x-10 md:mt-0">
+                    <span>ALBERT</span>
+                    <span>SHELBY</span>
+                </div>
             </div>
         </div>
 
         <!-- card 1 -->
-        <div class="relative flex flex-col justify-center items-center mt-6">
-            <div>
-                <img src="https://londonbrogues.co.uk/cdn/shop/files/BLACKPATENTbrogue.jpg?v=1698323764&width=360"
-                    class="h-[360px] w-[360px]" alt="">
-            </div>
-            <div>
-                <span>ALBERT PATENT BROGUE OXFORD</span><br>
-                <span>$74.00</span>
+        <div class="md:flex md:space-x-10 md:p-6 md:text-sm">
+            <div class="relative flex flex-col justify-center items-center mt-6">
+                <div>
+                    <img src="https://londonbrogues.co.uk/cdn/shop/files/BLACKPATENTbrogue.jpg?v=1698323764&width=360"
+                        class="h-[360px] w-[360px]" alt="">
+                </div>
+                <div>
+                    <span>ALBERT PATENT BROGUE OXFORD</span><br>
+                    <span class="font-bold">$74.00</span>
+                </div>
+
+                <div class="bg-red-950 rounded-full text-white p-4 absolute right-4 top-2">
+                    <span>Sale</span>
+                </div>
             </div>
 
-            <div class="bg-red-950 rounded-full text-white p-4 absolute right-4 top-2">
-                <span>Sale</span>
+            <!-- 2nd -->
+            <div class="relative flex flex-col justify-center items-center mt-6">
+                <div>
+                    <img src="https://londonbrogues.co.uk/cdn/shop/files/BLACKPATENTOXFORD.jpg?v=1698323590&width=360"
+                        class="h-[360px] w-[360px]" alt="">
+                </div>
+                <div>
+                    <span>ALBERT PATENT BROGUE OXFORD</span><br>
+                    <span class="font-bold">$74.00</span>
+                </div>
+            </div>
+
+            <!-- 3rd -->
+
+            <div class="relative flex flex-col justify-center items-center mt-6">
+                <div>
+                    <img src="https://londonbrogues.co.uk/cdn/shop/products/SIDNEYTAN3Q.jpg?v=1666013167&width=360"
+                        class="h-[360px] w-[360px]" alt="">
+                </div>
+                <div>
+                    <span>ALBERT PATENT BROGUE OXFORD</span><br>
+                    <span class="font-bold">$74.00</span>
+                </div>
+
+            </div>
+
+            <!-- 4th -->
+
+            <div class="relative flex flex-col justify-center items-center mt-6">
+                <div>
+                    <img src="https://londonbrogues.co.uk/cdn/shop/products/SIDNEYBLACK3Q.jpg?v=1666013776&width=360"
+                        class="h-[360px] w-[360px]" alt="">
+                </div>
+                <div>
+                    <span>ALBERT PATENT BROGUE OXFORD</span><br>
+                    <span class="font-bold">$74.00</span>
+                </div>
+
+            </div>
+
+            <!-- 5th -->
+
+            <div class="relative flex flex-col justify-center items-center mt-6">
+                <div>
+                    <img src="https://londonbrogues.co.uk/cdn/shop/products/LBTAN.jpg?v=1631795146&width=360"
+                        class="h-[360px] w-[360px]" alt="">
+                </div>
+                <div>
+                    <span>ALBERT PATENT BROGUE OXFORD</span><br>
+                    <span class="font-bold">$74.00</span>
+                </div>
+
+            </div>
+
+            <!-- 6th -->
+            <div class="relative flex flex-col justify-center items-center mt-6">
+                <div>
+                    <img src="https://londonbrogues.co.uk/cdn/shop/products/LBBROWN.jpg?v=1631795137&width=360"
+                        class="h-[360px] w-[360px]" alt="">
+                </div>
+                <div>
+                    <span>ALBERT PATENT BROGUE OXFORD</span><br>
+                    <span class="font-bold">$74.00</span>
+                </div>
+
             </div>
         </div>
 
-        <!-- 2nd -->
-        <div class="relative flex flex-col justify-center items-center mt-6">
-            <div>
-                <img src="https://londonbrogues.co.uk/cdn/shop/files/BLACKPATENTOXFORD.jpg?v=1698323590&width=360"
-                    class="h-[360px] w-[360px]" alt="">
-            </div>
-            <div>
-                <span>ALBERT PATENT BROGUE OXFORD</span><br>
-                <span>$74.00</span>
+
+        <div class="bg-[url(https://londonbrogues.co.uk/cdn/shop/t/26/assets/lb-brogues.jpg?v=126712014838268970381740671550)] 
+        h-[280px] w-[94%] ml-3 mt-2 bg-cover bg-center bg-no-repeat text-white space-y-4 pt-[90px] pl-3 
+        md:h-[500px]  md:mx-auto md:w-[94%] md:my-10">
+            <div class=" md:pt-[250px] space-y-3 font-semibold">
+                <p class="font-serif">GROOM OR GUEST</p>
+                <h1 class="font-serif text-3xl font-semibold ">THE BROGUES TO SUIT YOUR STYLE</h1>
+                <p> > SHOP OUR WEDDING COLLECTION</p>
             </div>
         </div>
 
-        <!-- 3rd -->
 
-        <div class="relative flex flex-col justify-center items-center mt-6">
-            <div>
-                <img src="https://londonbrogues.co.uk/cdn/shop/products/SIDNEYTAN3Q.jpg?v=1666013167&width=360"
-                    class="h-[360px] w-[360px]" alt="">
-            </div>
-            <div>
-                <span>ALBERT PATENT BROGUE OXFORD</span><br>
-                <span>$74.00</span>
-            </div>
-
-        </div>
-
-        <!-- 4th -->
-
-        <div class="relative flex flex-col justify-center items-center mt-6">
-            <div>
-                <img src="https://londonbrogues.co.uk/cdn/shop/products/SIDNEYBLACK3Q.jpg?v=1666013776&width=360"
-                    class="h-[360px] w-[360px]" alt="">
-            </div>
-            <div>
-                <span>ALBERT PATENT BROGUE OXFORD</span><br>
-                <span>$74.00</span>
-            </div>
-
-        </div>
-
-        <!-- 5th -->
-
-        <div class="relative flex flex-col justify-center items-center mt-6">
-            <div>
-                <img src="https://londonbrogues.co.uk/cdn/shop/products/LBTAN.jpg?v=1631795146&width=360"
-                    class="h-[360px] w-[360px]" alt="">
-            </div>
-            <div>
-                <span>ALBERT PATENT BROGUE OXFORD</span><br>
-                <span>$74.00</span>
-            </div>
-
-        </div>
-
-        <!-- 6th -->
-        <div class="relative flex flex-col justify-center items-center mt-6">
-            <div>
-                <img src="https://londonbrogues.co.uk/cdn/shop/products/LBBROWN.jpg?v=1631795137&width=360"
-                    class="h-[360px] w-[360px]" alt="">
-            </div>
-            <div>
-                <span>ALBERT PATENT BROGUE OXFORD</span><br>
-                <span>$74.00</span>
-            </div>
-
-        </div>
-
-
-        <div
-            class="bg-[url(https://londonbrogues.co.uk/cdn/shop/t/26/assets/lb-brogues.jpg?v=126712014838268970381740671550)] h-[280px] w-[94%] ml-3 mt-2 bg-contain bg-no-repeat text-white space-y-4 pt-[90px] pl-3">
-            <p class="font-serif">GROOM OR GUEST</p>
-            <h1 class="font-serif text-2xl font-semibold">THE BROGUES TO<br>SUIT YOUR STYLE</h1>
-            <p> > SHOP OUR WEDDING COLLECTION</p>
-        </div>
-
-        <div class="flex flex-col gap-0 p-0 m-0">
-            <div
-                class="bg-[url(https://londonbrogues.co.uk/cdn/shop/t/26/assets/lb-left.jpg?v=56729518042173369651740671550)] h-[280px] w-full bg-cover bg-no-repeat text-white space-y-4 pt-[90px] pl-3 flex flex-col justify-center items-center">
+        <div class="flex flex-col gap-0 p-0 m-0 md:flex md:flex-row">
+            <div class="bg-[url(https://londonbrogues.co.uk/cdn/shop/t/26/assets/lb-left.jpg?v=56729518042173369651740671550)] h-[280px] w-full bg-cover bg-no-repeat text-white space-y-4 pt-[90px] pl-3 flex flex-col justify-center items-center
+                md:h-[500px] md:pt-[300px]">
                 <p class="font-serif">LONDON BROGUES</p>
-                <h1 class="font-serif text-2xl font-semibold">BROGUES FOR MEN</h1>
+                <h1 class="font-serif text-3xl font-bold">BROGUES FOR MEN</h1>
                 <p> > SHOP FOR BROGUES</p>
             </div>
 
-            <div
-                class="bg-[url(https://londonbrogues.co.uk/cdn/shop/t/26/assets/lb-right.jpg?v=54148192252220948911740671550)] h-[280px] w-full bg-cover bg-no-repeat text-white space-y-4 pt-[90px] pl-3 flex flex-col justify-center items-center">
+            <div class="bg-[url(https://londonbrogues.co.uk/cdn/shop/t/26/assets/lb-right.jpg?v=54148192252220948911740671550)] h-[280px] w-full bg-cover bg-no-repeat text-white space-y-4 pt-[90px] pl-3 flex flex-col justify-center items-center
+                md:h-[500px] md:pt-[300px]">
                 <p class="font-serif">LONDON BROUGES</p>
-                <h1 class="font-serif text-2xl font-semibold">BOOTS FOR MEN</h1>
+                <h1 class="font-serif text-3xl font-bold">BOOTS FOR MEN</h1>
                 <p> > SHOP FOR BOOTS</p>
             </div>
         </div>
 
 
         <div>
-            <div class="font-serif text-2xl flex justify-center mt-6 font-bold">
+            <div class="font-serif text-4xl flex justify-center mt-15 font-bold">
                 <span>BEST SELLING BOOTS</span>
             </div>
 
             <!-- shoe -->
-            <div class="relative flex flex-col justify-center items-center mt-6">
-                <div>
-                    <img src="https://londonbrogues.co.uk/cdn/shop/products/LBTANBOOT3Q.jpg?v=1631787865&width=360"
-                        class="h-[360px] w-[360px]" alt="">
-                </div>
-                <div>
-                    <span>ALBERT PATENT BROGUE OXFORD</span><br>
-                    <span>$74.00</span>
-                </div>
-            </div>
-
-            <!-- 2nd shoe -->
-
-            <div class="relative flex flex-col justify-center items-center mt-6">
-                <div>
-                    <img src="https://londonbrogues.co.uk/cdn/shop/products/LBTANBOOT3Q.jpg?v=1631787865&width=360"
-                        class="h-[360px] w-[360px]" alt="">
-                </div>
-                <div>
-                    <span>ALBERT PATENT BROGUE OXFORD</span><br>
-                    <span>$74.00</span>
-                </div>
-            </div>
-
-            <!-- 3rd shoe -->
-
-            <div class="relative flex flex-col justify-center items-center mt-6">
-                <div>
-                    <img src="https://londonbrogues.co.uk/cdn/shop/products/GATSBEY_BOOT_TAN-NAVY_SUEDE.jpg?v=1568281271&width=360"
-                        class="h-[360px] w-[360px]" alt="">
-                </div>
-                <div>
-                    <span>ALBERT PATENT BROGUE OXFORD</span><br>
-                    <span>$74.00</span>
-                </div>
-            </div>
+            <div class="md:flex md:space-x-6 md:p-10 md:text-sm ">
+                <div class="relative flex flex-col justify-center items-center mt-6">
+                    <div>
+                        <img src="https://londonbrogues.co.uk/cdn/shop/products/LBTANBOOT3Q.jpg?v=1631787865&width=360"
+                            class="h-[360px] w-[360px] md:h-[250px]" alt="">
+                    </div>
+                    <div>
+                        <span>ALBERT PATENT BROGUE OXFORD</span><br>
+                        <span class="font-bold">$74.00</span>
+                    </div>
 
 
-            <!-- 4th shoe -->
-
-            <div class="relative flex flex-col justify-center items-center mt-6">
-                <div>
-                    <img src="	https://londonbrogues.co.uk/cdn/shop/products/GATSBY_BOOT_TAN-BROWN_TWEED.jpg?v=1568369297&width=360"
-                        class="h-[360px] w-[360px]" alt="">
-                </div>
-                <div>
-                    <span>ALBERT PATENT BROGUE OXFORD</span><br>
-                    <span>$74.00</span>
-                </div>
-            </div>
-
-            <!-- 5th shoe -->
-
-            <div class="relative flex flex-col justify-center items-center mt-6">
-                <div>
-                    <img src="	https://londonbrogues.co.uk/cdn/shop/products/GATSBY_BOOT_CHESTNUT.jpg?v=1568369560&width=360"
-                        class="h-[360px] w-[360px]" alt="">
-                </div>
-                <div>
-                    <span>ALBERT PATENT BROGUE OXFORD</span><br>
-                    <span>$74.00</span>
+                    <div class="bg-red-950 rounded-full text-white p-4 absolute right-4 top-2">
+                        <span>Sale</span>
+                    </div>
                 </div>
 
-                <div class="bg-red-950 rounded-full text-white p-4 absolute right-4 top-2">
-                    <span>Sale</span>
-                </div>
-            </div>
+                <!-- 2nd shoe -->
 
-            <!-- 6th shoe -->
-            <div class="relative flex flex-col justify-center items-center mt-6">
-                <div>
-                    <img src="https://londonbrogues.co.uk/cdn/shop/products/GATSBY_BOOT_CHESTNUT.jpg?v=1568369560&width=360"
-                        class="h-[360px] w-[360px]" alt="">
-                </div>
-                <div>
-                    <span>ALBERT PATENT BROGUE OXFORD</span><br>
-                    <span>$74.00</span>
+                <div class="relative flex flex-col justify-center items-center mt-6">
+                    <div>
+                        <img src="https://londonbrogues.co.uk/cdn/shop/products/LBTANBOOT3Q.jpg?v=1631787865&width=360"
+                            class="h-[360px] w-[360px] md:h-[250px]" alt="">
+                    </div>
+                    <div>
+                        <span>ALBERT PATENT BROGUE OXFORD</span><br>
+                        <span class="font-bold">$74.00</span>
+                    </div>
+
+
+                    <div class="bg-red-950 rounded-full text-white p-4 absolute right-4 top-2">
+                        <span>Sale</span>
+                    </div>
                 </div>
 
-                <div class="bg-red-950 rounded-full text-white p-4 absolute right-4 top-2">
-                    <span>Sale</span>
+                <!-- 3rd shoe -->
+
+                <div class="relative flex flex-col justify-center items-center mt-6">
+                    <div>
+                        <img src="https://londonbrogues.co.uk/cdn/shop/products/GATSBEY_BOOT_TAN-NAVY_SUEDE.jpg?v=1568281271&width=360"
+                            class="h-[360px] w-[360px] md:h-[250px]" alt="">
+                    </div>
+                    <div>
+                        <span>ALBERT PATENT BROGUE OXFORD</span><br>
+                        <span class="font-bold">$74.00</span>
+                    </div>
+
+
+                    <div class="bg-red-950 rounded-full text-white p-4 absolute right-4 top-2">
+                        <span>Sale</span>
+                    </div>
+                </div>
+
+
+                <!-- 4th shoe -->
+
+                <div class="relative flex flex-col justify-center items-center mt-6">
+                    <div>
+                        <img src="	https://londonbrogues.co.uk/cdn/shop/products/GATSBY_BOOT_TAN-BROWN_TWEED.jpg?v=1568369297&width=360"
+                            class="h-[360px] w-[360px] md:h-[250px]" alt="">
+                    </div>
+                    <div>
+                        <span>ALBERT PATENT BROGUE OXFORD</span><br>
+                        <span class="font-bold">$74.00</span>
+                    </div>
+
+                    <div class="md:bg-red-950 md:rounded-full md:text-white md:p-4 md:absolute md:right-4 md:top-2">
+                        <span>Sale</span>
+                    </div>
+                </div>
+
+                <!-- 5th shoe -->
+
+                <div class="relative flex flex-col justify-center items-center mt-6">
+                    <div>
+                        <img src="	https://londonbrogues.co.uk/cdn/shop/products/GATSBY_BOOT_CHESTNUT.jpg?v=1568369560&width=360"
+                            class="h-[360px] w-[360px] md:h-[250px]" alt="">
+                    </div>
+                    <div>
+                        <span>ALBERT PATENT BROGUE OXFORD</span><br>
+                        <span class="font-bold">$74.00</span>
+                    </div>
+
+                    <div class="bg-red-950 rounded-full text-white p-4 absolute right-4 top-2">
+                        <span>Sale</span>
+                    </div>
+                </div>
+
+                <!-- 6th shoe -->
+                <div class="relative flex flex-col justify-center items-center mt-6">
+                    <div>
+                        <img src="https://londonbrogues.co.uk/cdn/shop/products/GATSBY_BOOT_CHESTNUT.jpg?v=1568369560&width=360"
+                            class="h-[360px] w-[360px] md:h-[250px]" alt="">
+                    </div>
+                    <div>
+                        <span>ALBERT PATENT BROGUE OXFORD</span><br>
+                        <span class="font-bold">$74.00</span>
+                    </div>
+
+                    <div class="bg-red-950 rounded-full text-white p-4 absolute right-4 top-2">
+                        <span>Sale</span>
+                    </div>
                 </div>
             </div>
 
@@ -294,60 +342,81 @@
                 <span>BROUGES GUARANTEE</span>
             </div>
 
-            <div class="text-center p-4 mt-5 text-sm space-y-2">
-                <p>At London Brogues, we take pride in crafting footwear that stands the test of time. Every pair of our
-                    shoes is designed with meticulous attention to detail, blending classic craftsmanship with
-                    contemporary style.</p>
-                <p>We are committed to using only the finest materials, sourcing premium South American leathers and
-                    high quality Italian components to ensure exceptional durability, comfort, and elegance. This allows
-                    us to create luxury footwear that remains accessible, delivering outstanding quality at an
-                    affordable price.</p>
-                <p>Beyond our products, we are dedicated to providing unmatched customer service. Whether you need
-                    assistance with sizing, care advice, or any aspect of your purchase, our team is here to ensure your
-                    experience with London Brogues is nothing short of excellent.</p>
-                <p>When you choose London Brogues, you’re not just investing in a pair of shoes, you’re stepping into a
-                    legacy of craftsmanship, quality, and care. That’s our guarantee.</p>
+            <div class=" md:flex md:items-center md:justify-center">
+                <div class="text-center p-4 text-sm space-y-2 md:max-w-[800px]">
+                    <p>At London Brogues, we take pride in crafting footwear that stands the test of time. Every pair of
+                        our
+                        shoes is designed with meticulous attention to detail, blending classic craftsmanship with
+                        contemporary style.</p>
+                    <p>We are committed to using only the finest materials, sourcing premium South American leathers and
+                        high-quality Italian components to ensure exceptional durability, comfort, and elegance. This
+                        allows
+                        us to create luxury footwear that remains accessible, delivering outstanding quality at an
+                        affordable price.</p>
+                    <p>Beyond our products, we are dedicated to providing unmatched customer service. Whether you need
+                        assistance with sizing, care advice, or any aspect of your purchase, our team is here to ensure
+                        your
+                        experience with London Brogues is nothing short of excellent.</p>
+                    <p>When you choose London Brogues, you’re not just investing in a pair of shoes, you’re stepping
+                        into a
+                        legacy of craftsmanship, quality, and care. That’s our guarantee.</p>
+                </div>
             </div>
+
         </div>
 
 
         <!-- icons -->
 
-        <div class="flex space-x-10 p-10 mt-6 justify-center items-center">
+        <div class="grid grid-cols-2 gap-8 p-10 mt-6 items-center md:flex md:justify-center md:space-x-10">
             <div class="flex flex-col justify-center items-center">
                 <div>
-                    <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#000000"><path d="M224.12-161q-49.12 0-83.62-34.42Q106-229.83 106-279H40v-461q0-24 18-42t42-18h579v167h105l136 181v173h-71q0 49.17-34.38 83.58Q780.24-161 731.12-161t-83.62-34.42Q613-229.83 613-279H342q0 49-34.38 83.5t-83.5 34.5Zm-.12-60q24 0 41-17t17-41q0-24-17-41t-41-17q-24 0-41 17t-17 41q0 24 17 41t41 17ZM100-339h22q17-27 43.04-43t58-16q31.96 0 58.46 16.5T325-339h294v-401H100v401Zm631 118q24 0 41-17t17-41q0-24-17-41t-41-17q-24 0-41 17t-17 41q0 24 17 41t41 17Zm-52-204h186L754-573h-75v148ZM360-529Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px"
+                        fill="#000000">
+                        <path
+                            d="M229.41-160.67q-49.41 0-84.08-34.61-34.66-34.61-34.66-84.05H40v-454q0-27 19.83-46.84Q79.67-800 106.67-800h572.66v164.67h110l130.67 174v182h-74q0 49.44-34.59 84.05t-84 34.61q-49.41 0-84.08-34.61-34.66-34.61-34.66-84.05H348q0 49.33-34.59 84-34.59 34.66-84 34.66Zm-.08-66.66q21.67 0 36.84-15.17 15.16-15.17 15.16-36.83 0-21.67-15.16-36.84-15.17-15.16-36.84-15.16-21.66 0-36.83 15.16-15.17 15.17-15.17 36.84 0 21.66 15.17 36.83 15.17 15.17 36.83 15.17ZM106.67-346H132q17-24 41.69-38.33 24.7-14.34 55-14.34Q259-398.67 284-384q25 14.67 42 38h286.67v-387.33h-506V-346Zm620.66 118.67q21.67 0 36.84-15.17 15.16-15.17 15.16-36.83 0-21.67-15.16-36.84-15.17-15.16-36.84-15.16-21.66 0-36.83 15.16-15.17 15.17-15.17 36.84 0 21.66 15.17 36.83 15.17 15.17 36.83 15.17Zm-48-202.67H860L756-568.67h-76.67V-430ZM360-532.67Z" />
+                    </svg>
                 </div>
-                <div class="text-ceter text-sm">
+                <div class="text-center text-sm">
                     <span>FREE UK DELIVERY</span>
                 </div>
             </div>
 
             <div class="flex flex-col justify-center items-center">
                 <div>
-                    <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#000000"><path d="m671-361 207-207 42 42-207 207-42-42ZM30-170v-115q0-21.7 12.42-39.78Q54.84-342.86 76-351q26.34-9.87 50.17-23.43Q150-388 172-406l47 47q3 5 10 5t11.91-4.91Q245-363 244.5-369.5T241-381l-43-44q10-8 18.8-17.38 8.81-9.37 18.2-20.62l43 43q3 5 10 5t12.25-5.25Q304-424 303.5-430.5T300-442l-45-45 16-22q8-11 13-25l52 54q3 6 10 5.5t12.25-5.75Q362-484 362-490.26T359-502l-62-61 62-110 207-207 284 284-426 426H30Zm369-60 367-366-367 366Zm-307 0h307l367-366-200-200-159 160-34 63 24 25q22 24 24 55t-20 53L279-318q-22.13 22-52.57 22Q196-296 175-318l-10-10q-18 10.8-36 18.9-18 8.1-37 16.1v63Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px"
+                        fill="#000000">
+                        <path
+                            d="M675.33-370.33 873-568l47 47-198 197.67-46.67-47Zm-642 203.66v-112q0-22.46 12.78-41.18Q58.89-338.58 80.67-347q24.56-9.24 46.78-21.96 22.22-12.71 43.22-29.37l50.66 50.66q3.67 5.67 11.17 5.5 7.5-.16 12.77-5.44 4.4-4.39 4.06-11.56-.33-7.16-4-12.83l-47-47.67q9.34-8 17.71-16.75 8.37-8.75 17.29-19.25l46.67 47q3.67 5.67 11.17 5.67t13.33-5.83q4.17-4.17 3.83-11.34-.33-7.16-4-12.83L256-481q7-10.67 14.17-21.5 7.16-10.83 11.83-24.17L338.33-469q3.67 6.33 11.17 6 7.5-.33 13.33-6.17 4.17-4.16 4.17-11 0-6.85-3.67-12.83l-67-66.33 55-111.34 210-209.33 283.34 283.67-422 429.66H33.33Zm361-66.66 357-362.34-357 362.34Zm-293 0h293l357-362.34L561-786 406.33-631 374-562l26 26.67q22.33 24 23.67 55.83 1.33 31.83-21 54.17l-119 119q-22.76 22.66-54.05 22.66-31.29 0-52.95-22.66l-9.34-9.34Q151-305.8 134.67-298.4q-16.34 7.4-33.34 14.4v50.67Z" />
+                    </svg>
                 </div>
-                <div class="text-ceter text-sm">
+                <div class="text-center text-sm">
                     <span>100% Real Leather</span>
                 </div>
             </div>
-        </div>
 
-        <div class="flex space-x-15 p-10 mt-6 justify-center items-center ">
             <div class="flex flex-col justify-center items-center">
                 <div>
-                    <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#000000"><path d="M480-120 80-600l120-240h560l120 240-400 480ZM368-630h224l-75-150h-74l-75 150Zm82 381v-321H183l267 321Zm60 0 267-321H510v321Zm149-381h136l-75-150H584l75 150Zm-494 0h136l75-150H240l-75 150Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px"
+                        fill="#000000">
+                        <path
+                            d="M480-120 80-600l120-240h560l120 240-400 480ZM373.67-633.33h212.66l-70-140h-72.66l-70 140Zm73 369.66v-303h-252l252 303Zm66.66 0 252-303h-252v303Zm147.34-369.66h126l-70-140h-126l70 140Zm-487.34 0h126l70-140h-126l-70 140Z" />
+                    </svg>
                 </div>
-                <div class="text-ceter text-sm">
+                <div class="text-center text-sm">
                     <span>UNCOMPROMISING<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;QUALITY</span>
                 </div>
             </div>
 
             <div class="flex flex-col justify-center items-center">
                 <div>
-                    <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#000000"><path d="M450-154v-309L180-619v309l270 156Zm60 0 270-156v-310L510-463v309Zm-60 69L150-258q-14-8-22-22t-8-30v-340q0-16 8-30t22-22l300-173q14-8 30-8t30 8l300 173q14 8 22 22t8 30v340q0 16-8 30t-22 22L510-85q-14 8-30 8t-30-8Zm194-525 102-59-266-154-102 59 266 154Zm-164 96 104-61-267-154-104 60 267 155Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px"
+                        fill="#000000">
+                        <path
+                            d="M446.67-163.67V-461l-260-150.33V-314l260 150.33Zm66.66 0 260-150.33v-298l-260 151v297.33ZM446.67-87 153.33-256q-15.66-9-24.5-24.33-8.83-15.34-8.83-33.34v-332.66q0-18 8.83-33.34 8.84-15.33 24.5-24.33l293.34-169q15.66-9 33.33-9 17.67 0 33.33 9l293.34 169q15.66 9 24.5 24.33 8.83 15.34 8.83 33.34v332.66q0 18-8.83 33.34-8.84 15.33-24.5 24.33L513.33-87q-15.66 9-33.33 9-17.67 0-33.33-9Zm196-526 93.66-54L480-815.33 386-761l256.67 148ZM480-518l95.33-55.67-257-148.33L223-667l257 149Z" />
+                    </svg>
                 </div>
-                <div class="text-ceter text-sm">
+                <div class="text-center text-sm">
                     <span>PREMIUM<br> PACKAGING</span>
                 </div>
             </div>
@@ -372,50 +441,51 @@
                 </div>
             </div>
 
-            <div class="text-sm space-y-3 p-[80px]">
-                <div>
-                    <p>LINKS</p>
+            <div class="md:flex md:justify-between text-sm space-y-3 p-[80px]">
+                <!-- LINKS Section -->
+                <div class="md:w-1/2">
+                    <p class="font-semibold">LINKS</p>
+                    <ul class="space-y-3 underline">
+                        <li>My Account</li>
+                        <li>About Us</li>
+                        <li>Contact Us</li>
+                        <li>Shipping</li>
+                        <li>Returns & Exchange</li>
+                        <li>Privacy Notice & Cookies</li>
+                    </ul>
                 </div>
 
-                <ul class="space-y-3 underline ">
-                    <li>My Account</li>
-                    <li>About Us</li>
-                    <li>Contact Us</li>
-                    <li>Shipping</li>
-                    <li>Returns & Exchange</li>
-                    <li>Privacy Notice & Cookies</li>
-                </ul>
-            </div>
-
-            <div class="text-sm space-y-3 p-[80px]">
-                <div>
-                    <p>CONTACT US</p>
+                <!-- CONTACT US Section -->
+                <div class="md:w-1/2">
+                    <p class="font-semibold">CONTACT US</p>
+                    <ul class="space-y-3">
+                        <li>London Brogues</li>
+                        <li>Unit 22 Charnwood Edge Business Park, Syston Road, Cossington, Leicestershire</li>
+                        <li>LE7 4UZ United Kingdom</li>
+                        <li>Tel: +44 116 260 0005</li>
+                        <li>Email: Sales@londonbrogues.co.uk</li>
+                        <li>Company Number: 8798600</li>
+                        <li>Opening Times - Mon-Fri 9am-5pm</li>
+                        <li>Weekend and Evening Opening by appointment</li>
+                    </ul>
                 </div>
-
-                <ul class="space-y-3">
-                    <li>London Brogues</li>
-                    <li>Unit 22 Charnwood Edge Business Park, Syston Road, Cossington, Leicestershire</li>
-                    <li>LE7 4UZ United Kingdom</li>
-                    <li>Tel: +44 116 260 0005</li>
-                    <li>Email: Sales@londonbrogues.co.uk</li>
-                    <li>Company Number: 8798600</li>
-                    <li>Opening Times - Mon-Fri 9am-5pm</li>
-                    <li>Weekend and Evening Opening by appointment</li>
-                </ul>
             </div>
 
-            <div class="flex justify-center items-center text-sm p-10 text-center">
-                <p>Copyright © 2025 London Brogues Ltd. All rights reserved. All images and content within this website
+            <!-- Footer with Copyright and Payment Icons -->
+            <div class="md:flex md:justify-between text-sm p-10 text-center md:text-left">
+                <!-- Copyright on Left -->
+                <p class="md:w-1/2">Copyright © 2025 London Brogues Ltd. All rights reserved. All images and content
+                    within this website
                     is solely owned by London Brogues Ltd and cannot be used by any 3rd party without consent. This
                     website is best viewed using Google Chrome, Safari and newer internet browsers.</p>
-            </div>
 
-
-            <div class = "p-10">
-                <div class = "flex justify-center items-center">
-                    <img src="https://londonbrogues.co.uk/cdn/shop/t/26/assets/cards.png?v=148332119948095163591740671550" alt="">
+                <!-- Payment Icons on Right -->
+                <div class="flex justify-center md:justify-end items-center mt-4 md:mt-0 md:w-1/2">
+                    <img src="https://londonbrogues.co.uk/cdn/shop/t/26/assets/cards.png?v=148332119948095163591740671550"
+                        alt="">
                 </div>
             </div>
+
         </footer>
     </main>
 </body>
